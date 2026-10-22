@@ -1,0 +1,6 @@
+<h1>jouets à vendre</h1>
+let s=0;
+<p>nombres de jeux en promotion: {{ s }}</p>
+@for(g of gamelist();trackBy(g.id)) {
+  <mol-game-item [game]="g"></mol-game-item>
+}
